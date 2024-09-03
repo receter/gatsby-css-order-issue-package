@@ -1,0 +1,55 @@
+{
+  "name": "gatsby-css-order-issue-package",
+  "version": "1.0.0",
+  "description": "",
+  "exports": {
+    ".": {
+      "default": "./dist/index.js"
+    }
+  },
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "files": [
+    "dist",
+    "readme.md"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --mode development",
+    "transpile": "babel src -d dist --copy-files",
+    "prepublishOnly": "npm run transpile"
+  },
+  "peerDependencies": {
+    "prop-types": ">=15.7.2",
+    "react": ">=17.0.2",
+    "react-dom": ">=17.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.22.15",
+    "@babel/core": "^7.22.15",
+    "@babel/preset-env": "^7.22.15",
+    "@babel/preset-react": "^7.22.15",
+    "@eslint/js": "^9.9.0",
+    "babel-loader": "^8.3.0",
+    "core-js": "^3.32.1",
+    "css-loader": "^6.8.1",
+    "eslint": "^9.9.0",
+    "eslint-plugin-react": "^7.35.0",
+    "file-loader": "^6.2.0",
+    "globals": "^15.9.0",
+    "html-webpack-plugin": "^5.5.3",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "author": "Andreas Riedmüller",
+  "license": "ISC",
+  "browserslist": "> 0.25%, not dead",
+  "dependencies": {
+  }
+}
